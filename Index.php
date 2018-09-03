@@ -25,6 +25,7 @@
       		<a href=".\includes\Projects.html" class="bar-item button">Projects</a>
       		<a href=".\includes\Skills.html" class="bar-item button">Skills</a>
       </nav>
+      <div class="main" style="margin-left:250px">
       <!--profile Image -->
       <img src=".\img\Jean-Paul.jpg" alt="Jean-Paul's profile picture" style="width:10%">
       <h1>About Me</h1>
