@@ -17,10 +17,10 @@
       </div>
       <!--links to pages-->
       <div id="" class="padding-64 large text-grey" style="font-weight:bold">
-        <a href="..\index.html" class="bar-item button">Home</a>
-        <a href=".\Contact.html" class="bar-item button">Contact</a>
-        <a href=".\Projects.html" class="bar-item button">Projects</a>
-        <a href=".\Skills.html" class="bar-item button">Skills</a>
+        <a href="..\index.php" class="bar-item button">Home</a>
+        <a href=".\Contact.php" class="bar-item button">Contact</a>
+        <a href=".\Projects.php" class="bar-item button">Projects</a>
+        <a href=".\Skills.php" class="bar-item button">Skills</a>
     </nav>
     <div class="main" style="margin-left:250px">
     <h1>Skills</h1>
