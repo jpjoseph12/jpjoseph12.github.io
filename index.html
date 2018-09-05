@@ -12,13 +12,22 @@
     border-radius: 50%;
   }
   </style>
+  <script src="https://code.jquery.com/jquery-3.3.1.js">
+  </script>
+  <script>
+    $function(){
+      $("#header").load("./includes/header.html");
+      $("#footer").load("./includes/footer.html");
+    }
+  </script>
     <body>
-      <nav class="sidebar bar-block white collapse top" style="z-index:3;width:250px" id="mySidebar">
+      <div id="header"></div>
+    <nav class="sidebar bar-block white collapse top" style="z-index:3;width:250px" id="mySidebar">
       	<div class="container display-container padding-16">
       		<i onclick="close()" class="fa fa-remove hide-large button display-topright"></i>
       		<h3 href=".\index.html" class="wide"><b>Jean-Paul's online profile</b></h3>
       	</div>
-      	<!--links to pages-->
+        <!--Links to new pages -->
       	<div class="padding-64 large text-grey" style="font-weight:bold">
           <a href=".\index.html" class="bar-item button">Home</a>
       		<a href=".\includes\Contact.html" class="bar-item button">Contact</a>
@@ -37,7 +46,7 @@
         This entailed racking all the cisco hardware in line with the supplied rack diagram.
         I was also responsible for patching in all the desktops and printers as well as a patching schedule for the local and offshore support teams.
       </p>
-      <h2>Hobbies</h2>
+      <h2 class="">Hobbies</h2>
       <p>Keen interest in building and repairing electronics.
         I was a member of a society that allowed me to 3d print items that I could use in personal projects.
         Recently I have been self-teaching myself from books and the internet on how to repair cars in the dream of restoring a classic myself.</p>
@@ -66,11 +75,8 @@
         Feb 2012 – Jun 2013			       McDonalds
         <br>
         Crew Member
-
-
-
       </p>
+      <div id="footer"></div>
     </body>
   </body>
-
 </html>
