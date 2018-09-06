@@ -15,10 +15,10 @@
   <script src="https://code.jquery.com/jquery-3.3.1.js">
   </script>
   <script>
-    $function(){
-      $("#header").load("./includes/header.html");
-      $("#footer").load("./includes/footer.html");
-    }
+    // $function(){
+    //   $("#header").load("./includes/header.html");
+    //   $("#footer").load("./includes/footer.html");
+    // }
   </script>
     <body>
       <div id="header"></div>
@@ -34,6 +34,22 @@
       		<a href=".\includes\Projects.html" class="bar-item button">Projects</a>
       		<a href=".\includes\Skills.html" class="bar-item button">Skills</a>
       </nav>
+      <!-- mobile scaling-->
+      <header class="bar top hide-large black xlarge">
+  <div class="bar-item padding-24 wide">Jean-Paul's online profile</div>
+  <a href="javascript:void(0)" class="bar-item button padding-24 right" onclick="open()" id="myOverlay"><i class="fa fa-bars"></i></a>
+</header>
+      <div class="overlay hide-large" onclick="close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+      <script src="./js/functions.js">
+        function open() {
+          document.getElementById("mySidebar").style.display = "block";
+          document.getElementById("myOverlay").style.display = "block";
+        }
+        function close() {
+          document.getElementById("mySidebar").style.display = "none";
+          document.getElementById("myOverlay").style.display = "none";
+        }
+      </script>
       <div class="main" style="margin-left:250px">
       <!--profile Image -->
       <img src=".\img\Jean-Paul.jpg" alt="Jean-Paul's profile picture" style="width:10%">

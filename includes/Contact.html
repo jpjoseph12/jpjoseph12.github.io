@@ -19,20 +19,37 @@ body,h1,h2,h3,h4,h5,h6,.wide {font-family: "Montserrat", sans-serif;}
         <h3 href=".\index.html" class="wide"><b>Jean-Paul's online profile</b></h3>
       </div>
       <!--links to pages-->
-      <div id="" class="padding-64 large text-grey" style="font-weight:bold">
+      <div class="padding-64 large text-grey" style="font-weight:bold">
         <a href="..\index.html" class="bar-item button">Home</a>
         <a href=".\Contact.html" class="bar-item button">Contact</a>
         <a href=".\Projects.html" class="bar-item button">Projects</a>
         <a href=".\Skills.html" class="bar-item button">Skills</a>
     </nav>
+
+    <div class="overlay hide-large" onclick="close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+    <!--thank you message!-->
+    <!--<div Name="thanks" class="modal" style="display: block;">
+      <div class="modal-content animate-zoom" style="padding:32px">
+        <div class="container white center">
+          <i onclick="document.getElementByName('thanks').style.display='none'" class="fa fa-remove right button transparent xxlarge">
+
+          </i>
+          <h2 class="wide">THANK YOU</h2>
+          <p>Thank you for your message and I will reply to you as quickly as possible</p>
+        </div>
+      </div>
+    </div>-->
+    <script src="./js/functions.js">
+
+    </script>
       <div class="main" style="margin-left:250px">
-    <p>Questions? Go ahead and enquire. </p>
-			 <form action="https://script.google.com/macros/s/AKfycbwl5RtEHdS2zITr4Pm8TKe-_6fpoMuIjFfNWBLz/exec" method="post" data-email="jpjoseph12@gmail.com">
-				 <p><input class="input border" type="text" placeholder="Name" name="Name" required="required"></p>
-				 <p><input class="input border" type="text" placeholder="Email" name="Email" required="required"></p>
+    <h3>Questions? Go ahead and enquire. </h3>
+			 <form action="https://script.google.com/macros/s/AKfycbwl5RtEHdS2zITr4Pm8TKe-_6fpoMuIjFfNWBLz/exec" method="post" data-email="jpjoseph12@gmail.com" name="form" onsubmit="return validate()">
+				 <p><input class="input border" type="text" placeholder="Name" name="Name"></p>
+				 <p><input class="input border" type="text" placeholder="Email" name="Email"></p>
 				 <p><input class="input border" type="text" placeholder="Subject" name="Subject" ></p>
-				 <p><input class="input border" type="text" placeholder="Message" name="Message" required=""></p>
-				 <button type="submit" class="button block black" onclick="window.alert('Thank you, I will reply as soon as possible!')">Send</button>
+				 <p><input class="input border" type="text" placeholder="Message" name="Message"></p>
+				 <button type="submit" class="button block black" onclick="">Send</button>
 			 </form>
   </body>
 </html>
