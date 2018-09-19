@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html5>
 
 <html>
   <link rel="stylesheet" href="./css/w3.css"/>
@@ -37,9 +37,13 @@
       <!-- mobile scaling-->
       <header class="bar top hide-large black xlarge">
   <div class="bar-item padding-24 wide">Jean-Paul's online profile</div>
-  <a href="javascript:void(0)" class="bar-item button padding-24 right" onclick="open()" id="myOverlay"><i class="fa fa-bars"></i></a>
+    <div class="">
+      <button class="bar-item button padding-24 right" onclick="open()" id="myOverlay"><i class="fa fa-bars"></i></button>
+
+    </div>
+
 </header>
-      <div class="overlay hide-large" onclick="close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+      <div class="overlay hide-large" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
       <script src="./js/functions.js">
         function open() {
           document.getElementById("mySidebar").style.display = "block";
